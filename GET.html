@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="myApp">
+	<head>
+		<title>AngularJS Get</title>
+		<script src="lib/Angular/angular.min.js"></script>
+		<script src="lib/Angular/angular-sanitize.js"></script>
+    	<script src="js/get.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Hello">
+		   <div ng-repeat="UUID in node.uuid">
+			<p>The ID is {{UUID.value}}</p>
+		   </div>
+		   <div ng-repeat="TITLE in node.title">
+		   <p>Title : {{TITLE.value}}</p>
+		   </div>
+		   <div ng-repeat="BODY in node.body">
+			<p>The content is </p>
+<!--				<div ng-bind-html="text"> -->
+			<div ng-bind-html="BODY.value"></div>
+<!--				</div>
+           {{BODY.value}}
+		   </div>-->
+		   <p>The whole message is {{node}}</p>
+		</div>
+	</body>
+</html>
