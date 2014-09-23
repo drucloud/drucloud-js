@@ -4,7 +4,7 @@ var myApp = angular.module('myApp', ['ngSanitize']);
     $scope.node = [];
     var request = $http({
     method: 'POST', 
-    url: 'http:///bootdev:bootdev@localhost/drupal8.14/entity/node', 
+    url: 'http:///localhost/drupal8.14/entity/node', 
     headers: { 
     	"Content-Type" : 'application/hal+json',
     	"Authorization" : 'Basic Ym9vdGRldjpib290ZGV2'
